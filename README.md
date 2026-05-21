@@ -52,13 +52,12 @@ Operator probed the C2 listener late session via `curl -I http://194.36.110.139:
 
 ---
 
-### Phase 7 — Actions on Objectives (Failed)
+### Phase 7 — Actions on Objectives
 Credential harvesting succeeded — `aws_creds`, `kube_creds`, `ssh_user_keys` harvested from GF-DEV01.
 
-All lateral movement failed:
 - **SMB** — RC=1, file delivery failed
 - **WinRM** — RC=1, remote execution failed
-- **Ligolo** — C2 tunnel established
+- **Ligolo** — C2 tunnel established successfully, detected by Defender for Cloud
 - **WMI** — RC=0 locally, no confirmed execution on Windows
 - **SAMR enumeration** on GF-DC01 via `t.harris` — succeeded but no further access gained
 
