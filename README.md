@@ -58,6 +58,7 @@ Credential harvesting succeeded — `aws_creds`, `kube_creds`, `ssh_user_keys` h
 All lateral movement failed:
 - **SMB** — RC=1, file delivery failed
 - **WinRM** — RC=1, remote execution failed
+- **Ligolo** — C2 tunnel established
 - **WMI** — RC=0 locally, no confirmed execution on Windows
 - **SAMR enumeration** on GF-DC01 via `t.harris` — succeeded but no further access gained
 
